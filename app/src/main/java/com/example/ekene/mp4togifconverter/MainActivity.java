@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             final Uri selectedVideo = data.getData();
             MediaManager.get()
                     .upload(selectedVideo)
-                    .unsigned("kennyy")
+                    .unsigned("YOUR_PRESET_NAME")
                     .option("resource_type", "video")
                     .callback(new UploadCallback() {
                         @Override
